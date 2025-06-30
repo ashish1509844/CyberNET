@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="website icon" type="png" href="image/cyber_logo.jpeg">
+    <link rel="stylesheet" href="css/style_customer.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/from_script.js"></script>
+</head>
+
+<body background="image/contact2.jpg">
+    <header>
+        <a href="" class="logo"><img src="image/cyber_logo.jpg"></a>
+        <nav>
+            <a href="index1.html">Home</a>
+            <a href="index1.html">About</a>
+            <a href="index1.html">Services</a>
+            <a href="contact.html">Contact </a>
+        </nav>
+    </header>
+    <form id="registrationForm" onsubmit="return validateForm();">
+        <h2>Registration</h2>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <div class="error" id="emailError"></div>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" pattern="[6-9]{1}[0-9]{9}" 
+            onKeyPress="return (event.charCode>47 
+&&event.charCode<58)"  maxlength="10" placeholder="Enter your mobile number">
+            <div class="error" id="mobileError"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <div class="error" id="passwordError"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+            <div class="error" id="confirmPasswordError"></div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <h2><a style="color: black;" href="contact.html">Back to login</a></h2>
+    </form>
+</body>
+</html>
